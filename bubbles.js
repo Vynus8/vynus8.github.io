@@ -240,7 +240,7 @@ function drawText(name, letterColors) {
             }
         } else {
             // if undefined set black
-            letterColors = [[0, 0, 27]];
+            letterColors = [[255, 255, 255]];
         }
 
         if (document.alphabet.hasOwnProperty(ccHex)) {
@@ -302,7 +302,7 @@ var pointCollection;
 document.rotationForce = 0.0;
 document.Friction = 0.95;
 // Size the text
-document.sizeRatio = window.innerWidth / 1500;
+document.sizeRatio = window.innerWidth / 1500; //default 1500
 // Global mouse-to-point interaction threshold (px)
 document.mouseResponseThreshold = 50;
 
